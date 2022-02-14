@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+</head>
+<body>
+    <h1>FAQ</h1>
+    <!--jQuery Accordion Widget-->
+    <div id="accordion">
+        <h3 class="subheading">Who am I?</h3>
+        <div class="acbody">
+          <p>
+          I am actually Dale Wright. Currently at the time of writing this I'm a first year student at West-Mec Central Campus, taking a 2 year coding course that teaches me how to use HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <h3 class="subheading">What is my expertise?</h3>
+        <div class="acbody">
+          <p>
+          I wouldn't say I necessarily have an expertise at the moment, I do have somethings that I am good at though, such as Coding for example, Graphic Design, and also Digital/Traditional Art.
+          </p>
+        </div>
+        <h3 class="subheading">Do I have any certifications?</h3>
+        <div class="acbody">
+          <p>
+          Currently the only certification that I have at the moment is a Adobe Graphic Design Certification. Basically it means I am certified in using Adobe products such as Photoshop and Illustrator. Around 2023/2024 I will finis my West-Mec course and will be certified by Microsoft.
+          </p>
+        </div>
+        <h3 class="subheading">What services do I offer?</h3>
+        <div class="acbody">
+          <p>
+          None, I do not actually offer any services at this time as I am a student and not an employee nor freelancer at the moment.
+          </p>
+        </div>
+      </div>
+</body>
+<script src="js/jquery-3.6.0.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</html>

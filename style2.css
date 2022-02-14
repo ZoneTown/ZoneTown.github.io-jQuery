@@ -1,0 +1,27 @@
+html{
+    background-color:black;
+    color:white;
+}
+
+body{
+    width:100%;
+    margin:0;
+}
+
+h1{
+    padding:50px;
+    text-align:center;
+    font-size:42px;
+    font-family: 'Comforter', cursive;
+}
+
+.subheading{
+    background-color:rgb(64, 64, 64);
+    color:white;
+}
+
+.acbody{
+    background-color:rgb(29, 29, 29);
+    color:white;
+    font-size:24px;
+}

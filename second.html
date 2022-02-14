@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <form>
+        <h2>Contact</h2>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="em">Enter your email:</label><br>
+        <input type="email" id="em" name="email" required><br><br>
+        <label for="pw">Enter Password:</label><br>
+        <input type="password" id="pw" name="pass" required><br><br><br>
+
+        <label for="msg">Reason for contact</label><br>
+        <textarea id="msg" name="message" rows="10" cols="70">
+        </textarea><br><br>
+
+        <!--Date Picker jQuery Widget-->
+        <p>Date: <input type="text" id="datepicker"></p>
+
+        <br>
+        <br>
+
+        <input type="Submit" value="Submit">   
+         
+    </form>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</html>

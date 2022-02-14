@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Practice Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="flex-container">
+            <div>Home</div>
+            <div>Calender</div>
+            <a href="second.html" target="_blank">Contact</a>
+            <a href="third.html" target="_blank">FAQ</a>
+        </div>
+    </nav>
+
+    <header>
+        <img id="headerimg" src="man.jpg"/>
+        <h1 id="heading1">I'm a designer</h1>
+        <h2 id="heading2">Ethan Jones</h2>
+    </header>
+
+    <!--jQuery Accordion Widget-->
+    <section id="sect">
+        <div id="accordion">
+            <h3 class="subheading">Graphic Design</h3>
+            <div class="acbody">
+              <p>
+                A graphic designer is a professional within the graphic design and graphic arts industry who assembles together images, typography, or motion graphics to create a piece of design. A graphic designer creates the graphics primarily for published, printed, or electronic media, such as brochures and advertising.
+              </p>
+            </div>
+            <h3 class="subheading">Website Design</h3>
+            <div class="acbody">
+              <p>
+                Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.
+              </p>
+            </div>
+            <h3 class="subheading">Back-end Website Coding</h3>
+            <div class="acbody">
+              <p>
+                The back-end is the code that runs on the server, that receives requests from the clients, and contains the logic to send the appropriate data back to the client. The back-end also includes the database, which will persistently store all of the data for the application.
+              </p>
+            </div>
+            <h3 class="subheading">Front-end Website UI</h3>
+            <div class="acbody">
+              <p>
+                Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.
+              </p>
+            </div>
+          </div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+
+    <p>Website Progress 100%</p>
+    <div id="progressbar"></div>
+
+    <br>
+    <br>
+    <br>
+    
+    <footer>All Rights Reserved
+      West-Mec, Central Campus
+      Goodyear, Arizona
+    </footer>
+
+</body>
+
+<script src="js/jquery-3.6.0.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+
+  $( function() {
+    $( "#progressbar" ).progressbar({
+      value: false
+    });
+  } );
+  </script>
+</html>
